@@ -23,7 +23,7 @@ public class User {
         this.password = password;
         this.fName = fName;
         this.lName = lName;
-        this.eMail = eMail;
+
         this.profilePicure = profilePicure;
     }
 

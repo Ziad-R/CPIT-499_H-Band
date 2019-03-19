@@ -119,7 +119,7 @@ Patient patient;
                 }
             }
             catch(Exception e) {
-                Log.e("ERROR", e.getMessage(), e);
+                e.printStackTrace();
                 return null;
             }
         }

@@ -3,7 +3,7 @@
 #include <PulseSensorPlayground.h>     // Includes the PulseSensorPlayground Library.   
 
 //  Pulse Variables
-const int PulsePin = 0;       // PulseSensor PURPLE WIRE connected to ANALOG PIN 0
+const int PulsePin = 0;
 int Threshold = 550;           // Determine which Signal to "count as a beat" and which to ignore.
 
 // Temp Variables
@@ -21,11 +21,9 @@ void setup() {
   pulseSensor.analogInput(PulsePin);   
 
   pulseSensor.setThreshold(Threshold);   
-
-  // Double-check the "pulseSensor" object was created and "began" seeing a signal. 
+ 
   pulseSensor.begin();
      
-  
 }
 
 
@@ -43,11 +41,11 @@ void loop() {
 
   if (pulseSensor.sawStartOfBeat()) {            // Constantly test to see if "a beat happened". 
 
-  Serial.print("BPM: ");                        // Print phrase "BPM: " 
+  Serial.print("BPM: "); 
   Serial.println(myBPM);                        // Print the value inside of myBPM. 
   }
 
-  delay(1000);                    // considered best practice in a simple sketch.
+  delay(1000);
 
 }
 

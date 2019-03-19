@@ -9,6 +9,8 @@
 String AP = "Android-AP";
 String PASS = "70707070";
 String API = "2X2K8L7Y8T4FI1ND";
+String HOST = "api.thingspeak.com";
+String PORT = "80";
 String field1 = "pulse";
 String field2 = "temp";
 SoftwareSerial esp8266(RX,TX);
